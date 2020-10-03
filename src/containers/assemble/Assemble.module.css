@@ -35,15 +35,15 @@
     justify-content: space-around;
     height: 80vh;
 }
-.partName{
+.partName, .launchBtn{
     border: 1px solid white;
     border-radius: 8px;
     padding: 0.5rem 0.8rem;
-    margin : 0.5rem 0;
+    margin : 0.5rem 1rem;
     cursor: pointer;
 }
 
-.partName:hover{
+.partName:hover, .launchBtn:hover{
     background-color: black;
 }
 
@@ -71,4 +71,12 @@
     height: 100px;
     object-fit: cover;
     margin-left: 16px;
+}
+
+.launchBtn{
+    background-color: #000000d9;
+    width: 70px;
+    left: 50%;
+    position: fixed;
+    bottom: 32px;
 }
