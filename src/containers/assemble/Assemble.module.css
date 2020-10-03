@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    background-image : url('../../res/rocket.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+.sideNav{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border: 1px solid pink;
+    height: 100vh;
+    background-color: #000000a9;
+    border-radius: 0 16px 16px 0;
+}
+
+.enginePart{
+    display: flex;
+    width: 100px;
+    flex-wrap: wrap;
+    align-items: center;    
+}
+
+.enginePart img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
