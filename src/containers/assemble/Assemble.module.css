@@ -60,6 +60,7 @@
     align-items: center;
     border-bottom: 1px solid white;
     margin-bottom: 16px;
+    cursor: pointer;
 }
 
 .partDesc>div{
@@ -79,4 +80,16 @@
     left: 50%;
     position: fixed;
     bottom: 32px;
+}
+
+.contentBody{    
+    flex-basis: 66.5%;
+}
+.rocketContainer{
+    flex-basis: 33.5%;
+}
+
+.disabled{
+    cursor : not-allowed;
+    background-color: gray;
 }
