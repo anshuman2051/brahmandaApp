@@ -120,3 +120,8 @@
     cursor : not-allowed;
     background-color: gray;
 }
+
+img{
+    height: auto !important;
+    width: auto !important;
+}
