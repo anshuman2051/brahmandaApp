@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/brahmandaApp/static/css/main.107840bf.chunk.css",
+    "main.js": "/brahmandaApp/static/js/main.31a5cc02.chunk.js",
+    "main.js.map": "/brahmandaApp/static/js/main.31a5cc02.chunk.js.map",
+    "runtime-main.js": "/brahmandaApp/static/js/runtime-main.e94ac064.js",
+    "runtime-main.js.map": "/brahmandaApp/static/js/runtime-main.e94ac064.js.map",
+    "static/js/2.6f5651d9.chunk.js": "/brahmandaApp/static/js/2.6f5651d9.chunk.js",
+    "static/js/2.6f5651d9.chunk.js.map": "/brahmandaApp/static/js/2.6f5651d9.chunk.js.map",
+    "index.html": "/brahmandaApp/index.html",
+    "precache-manifest.612b8ebc20dabb937e72f846c65c49a2.js": "/brahmandaApp/precache-manifest.612b8ebc20dabb937e72f846c65c49a2.js",
+    "service-worker.js": "/brahmandaApp/service-worker.js",
+    "static/css/main.107840bf.chunk.css.map": "/brahmandaApp/static/css/main.107840bf.chunk.css.map",
+    "static/js/2.6f5651d9.chunk.js.LICENSE.txt": "/brahmandaApp/static/js/2.6f5651d9.chunk.js.LICENSE.txt",
+    "static/media/Assemble.module.css": "/brahmandaApp/static/media/rocket.44e72844.jpg",
+    "static/media/earth.png": "/brahmandaApp/static/media/earth.75a70cc9.png",
+    "static/media/engine1.png": "/brahmandaApp/static/media/engine1.15011d8f.png",
+    "static/media/engine2.png": "/brahmandaApp/static/media/engine2.2995c17b.png",
+    "static/media/fuel_first.png": "/brahmandaApp/static/media/fuel_first.eda5215d.png",
+    "static/media/fuel_sec_big.png": "/brahmandaApp/static/media/fuel_sec_big.7396c7fb.png",
+    "static/media/fuel_sec_small.png": "/brahmandaApp/static/media/fuel_sec_small.c122d622.png",
+    "static/media/jupiter.png": "/brahmandaApp/static/media/jupiter.9206af33.png",
+    "static/media/LandingPage.css": "/brahmandaApp/static/media/paladins.7d067053.otf",
+    "static/media/mars.png": "/brahmandaApp/static/media/mars.39b7cf9c.png",
+    "static/media/mercury.png": "/brahmandaApp/static/media/mercury.249cdd2c.png",
+    "static/media/neptune.png": "/brahmandaApp/static/media/neptune.006c61b3.png",
+    "static/media/pointed_nose.png": "/brahmandaApp/static/media/pointed_nose.b7f531aa.png",
+    "static/media/rocket.png": "/brahmandaApp/static/media/rocket.18c2ab60.png",
+    "static/media/round_nose.png": "/brahmandaApp/static/media/round_nose.f0aa7cf3.png",
+    "static/media/saturn.png": "/brahmandaApp/static/media/saturn.b0b98431.png",
+    "static/media/sun.png": "/brahmandaApp/static/media/sun.f89062b3.png",
+    "static/media/uranus.png": "/brahmandaApp/static/media/uranus.257075c1.png",
+    "static/media/venus.png": "/brahmandaApp/static/media/venus.86576646.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e94ac064.js",
+    "static/js/2.6f5651d9.chunk.js",
+    "static/css/main.107840bf.chunk.css",
+    "static/js/main.31a5cc02.chunk.js"
+  ]
+}
