@@ -88,26 +88,52 @@ class Launch extends React.Component{
             }
 
         ],        
-        destination : null
+        destination : null,       
     }
     
 
     componentDidMount = ()=>{
         this.setState({ data : this.props?.location?.state});
-        this.rocketTween = new TimelineLite({ paused:true }).to(this.rocketRef?.current, 2 , {x : "100"});
-        // this.rocketTween
-        //     .to(this.rocketRef, 2 , {display : "none"});
+                               
     }
+
+    handleRocketMotion = (path, reset=false)=>{
+        if( reset){
+            this.rocketTween = new TimelineLite({ paused:true })
+            .to(this.rocketRef?.current, 0 , {x : "0", y: "0"})            
+            this.rocketTween.play();         
+            return;
+        }
+        this.rocketTween = new TimelineLite({ paused:true })
+            .to(this.rocketRef?.current, 1 , {x : path.x1, y: path.y1, rotate:90})
+            .to(this.rocketRef?.current, 1 , {x : path.x2, y: path.y2, rotate:0, onComplete : ()=>{ this.setState({destination : null})}});   
+        this.rocketTween.play();         
+    }
+
 
     render(){
 
         let destination = this.state.destination;
         let width = null;
-        let height = null
+        let height = null;
+        let x = 400,y = 230,x1 ,x2,y1,y2;
+        let rocketPath = null;
         if( destination){            
             width = +destination.width?.slice(0,destination.width?.length-2);
             height = +destination.height?.slice(0,destination.height?.length-2);
+            x1 = (Math.floor(+destination?.x + 380)/2)
+            y1 =  Math.max(+destination?.y , 210) - (100 + 1.6* width)            
+            x2 = +destination?.x + width/2;
+            y2 = +destination?.y + height/2;
+
+            rocketPath = {
+                x1 :x1-x,
+                y1: (y1-y)/2.7,
+                x2: x2-x,
+                y2: y2-y
+            }
         }
+
 
         return(
             <div className={classes.container}>
@@ -148,7 +174,7 @@ class Launch extends React.Component{
                     {
                         destination ?
                                 <path 
-                                    d={`M${400 },${230} C${400},${230} ${(Math.floor(+destination?.x + 380)/2)},${  Math.max(+destination?.y , 210) - (100 + 1.6* width)}  ${+destination?.x + width/2},${+destination?.y + height/2}`} 
+                                    d={`M${x },${y} C${x},${y} ${x1},${y1}  ${x2},${y2}`} 
                                     className={classes.route}/> 
                             :
                                 null
@@ -162,23 +188,27 @@ class Launch extends React.Component{
                                         y={planet?.y} 
                                         height={planet?.height} 
                                         width={planet?.width} 
-                                        onClick={()=> this.setState({destination : planet})}
+                                        onClick={()=> this.setState(
+                                                {destination : planet}
+                                                ,()=>this.handleRocketMotion(null, true)
+                                                )}
                                         style={{cursor:"pointer"}}
                                     />
                         })
-                    }
-                    {
-                        // rocket
-                        destination || true?
-                            <image x="380" y = "210" width="20px" height="60px" href={require('../../res/rocket.png')} ref={this.rocketRef} />
-                        :
-                            null
-                    }
+                    }                                         
+                
+                <image x="390" y = "172" width="20px" height="60px" href={require('../../res/rocket.png')} ref={this.rocketRef} />
 
                 </svg>
                 <center 
                     className={classes.launchBtn + ( destination ? "" :  (" "+ classes.disabled))}
-                    onClick={()=>this.rocketTween?.play()}
+                    onClick={()=> destination ?  
+                                        this.handleRocketMotion(
+                                            rocketPath            
+                                        )                                        
+                                    : 
+                                        null
+                                }
                 >
                     GO !
                 </center>
