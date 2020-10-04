@@ -13,7 +13,7 @@ class Assemble extends React.Component{
                     {
                         name : "nose 1",
                         desc : "adfssdfsdfsfsd",
-                        image : "https://wiki.kerbalspaceprogram.com/images/c/c1/Oscar-B_FT.png",
+                        image : require('../../res/fuel.png'),
                         specs : [
                             ["spec1" , "value"],
                             ["key2" , "value2"]
@@ -22,7 +22,7 @@ class Assemble extends React.Component{
                     {
                         name : "nose 2",
                         desc : "adfssdfsdfsfsd",
-                        image : "https://wiki.kerbalspaceprogram.com/images/c/c1/Oscar-B_FT.png",
+                        image : require('../../res/fuel.png'),
                         specs : [
                             ["spec1" , "value"],
                             ["key2" , "value2"]

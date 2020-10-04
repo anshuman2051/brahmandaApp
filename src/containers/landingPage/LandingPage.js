@@ -2,6 +2,7 @@ import React from 'react';
 import SideBar from "./sidebar";
 import './LandingPage.css';
 
+
 class LandingPage extends React.Component {
     render() {
         return ( 
