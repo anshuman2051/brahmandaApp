@@ -1,7 +1,8 @@
 .container{
     background-color: black;
     width: 100%;
-    height: 100vh;
+    height: 100vh;   
+    overflow: hidden; 
 }
 
 .orbit{
@@ -9,4 +10,15 @@
     fill: none;
     stroke-width: 1px;
     stroke-dasharray: 5,5;
+}
+
+.svg{
+    position: relative;
+    top : 32px;
+}
+
+.route{
+    stroke: yellowgreen;
+    fill: none;
+    stroke-width: 1px;
 }
