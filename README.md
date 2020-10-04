@@ -38,6 +38,9 @@
 <img src="readme_images/3.png" alt="Logo">
 <br />
 <br />
+<img src="readme_images/4.png" alt="Logo">
+<br />
+<br />
 Space exploration is a dream for many of us. But as it is a dream and the achievable reality is far from present considering threats and lack of resources, we have come up with an idea to make an interactive Application that demostrates the manufacturing of rockets and the process starting from launch prior to landing or its injection into the orbit.
 
 Sending a Rocket from ground to space is an art of technology which started in the year 1950. There are several criterias that need to be considered for a successful launch of the rocket. It is difficult for common users to know the art without much theoretical and practical knowledge. So, In this Application we tried to show how the fundamental physical phenomena such as gravitation, inertial frames, quantum vacuum etc, the type of engines are used and other factors that affect the trajectory of the rockets.
