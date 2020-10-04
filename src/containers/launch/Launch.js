@@ -105,8 +105,8 @@ class Launch extends React.Component{
             return;
         }
         this.rocketTween = new TimelineLite({ paused:true })
-            .to(this.rocketRef?.current, 1 , {x : path.x1, y: path.y1, rotate:90})
-            .to(this.rocketRef?.current, 1 , {x : path.x2, y: path.y2, rotate:0, onComplete : ()=>{ this.setState({destination : null})}});   
+            .to(this.rocketRef?.current, 1 , {x : path.x1, y: path.y1, rotate: path.x1 > 0 ? 90 : -90})
+            .to(this.rocketRef?.current, 1 , {x : path.x2 , y: path.y2 + (path.x1 > 0 ? 10 :  10), rotate:0, onComplete : ()=>{ this.setState({destination : null})}});   
         this.rocketTween.play();         
     }
 
