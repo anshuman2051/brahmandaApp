@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/anshuman2051/brahmandaApp">
-    <img src="readme_images/logo1.png" alt="Logo" width="80" height="80">
+    <img src="readme_images/logo1.png" alt="Logo" width="500" height="500">
   </a>
 
   <h3 align="center">Brahmanda</h3>
@@ -17,7 +17,7 @@
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-* [About the Project](#about-the-project)
+* [About the Application](#about-the-application)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
@@ -29,7 +29,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About The Application
 <br />
 <br />
 <img src="readme_images/2.png" alt="Logo">
