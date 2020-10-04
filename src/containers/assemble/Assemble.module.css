@@ -2,12 +2,26 @@
     display: flex;
     flex-flow: row;
     align-items: center;
-    background-image : url('../../res/rocket.jpeg');
-    background-repeat: no-repeat;
+    background-image: url(../../res/rocket.jpg);
+    position: fixed;
+    height: 100%;
+    width: 100%;
     background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
     color: white;
+}
+
+@font-face {
+    font-family: 'Chops';
+    src: local('Chops'), url(../../fonts/chops.ttf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Brave';
+    src: local('Brave'), url(../../fonts/brave.ttf) format('opentype');
 }
 
 .sideNav{
@@ -16,15 +30,19 @@
     align-items: center;
     min-width: 100px;
     height: 100vh;
-    background-color: #000000d9;
+    background-color: #150040;
+    opacity: 70%;
     border-radius: 0 16px 16px 0;
+    position: relative;
+    padding-top: 10%;
 }
 
 .desc{
     display: flex;
     width: 100px;
     flex-wrap: wrap;
-    align-items: center;    
+    align-items: center;
+    font-family: Brave;
     
 }
 
@@ -35,23 +53,30 @@
     justify-content: space-around;
     height: 80vh;
 }
-.partName{
+.partName, .launchBtn{
     border: 1px solid white;
     border-radius: 8px;
     padding: 0.5rem 0.8rem;
-    margin : 0.5rem 0;
+    margin : 0.5rem 1rem;
     cursor: pointer;
+    opacity: 100% !important;
+    font-size: 200%;
+    font-family: Chops;
 }
 
 .partName:hover{
     background-color: black;
 }
 
+.launchBtn:hover{
+    background-color: #150040;
+}
+
 .descriptionBox{    
     border-radius: 16px;
     padding: 0.5rem 0.8rem;
     margin-left: 24px;
-    background-color: #000000d9;
+    background-color: #150040;
 }
 
 .partDesc{
@@ -60,6 +85,7 @@
     align-items: center;
     border-bottom: 1px solid white;
     margin-bottom: 16px;
+    cursor: pointer;
 }
 
 .partDesc>div{
@@ -71,4 +97,31 @@
     height: 100px;
     object-fit: cover;
     margin-left: 16px;
+}
+
+.launchBtn{
+    background-color: #150040;
+    padding: 0.5rem 0.8rem;
+    margin : 0.5rem 1rem;
+    text-align: center;
+    left: 50%;
+    position: fixed;
+    bottom: 32px;
+}
+
+.contentBody{    
+    flex-basis: 66.5%;
+}
+.rocketContainer{
+    flex-basis: 33.5%;
+}
+
+.disabled{
+    cursor : not-allowed;
+    background-color: gray;
+}
+
+img{
+    height: auto !important;
+    width: auto !important;
 }
