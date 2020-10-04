@@ -1,6 +1,10 @@
 .Login-component {
     /* The image used */
+<<<<<<< HEAD
+    background-image: url(../../../src/res/landing_background.jpg);
+=======
     background-image: url(../../res/landing_background.jpg);
+>>>>>>> 6bd365bf6e294b9d6e5a0aad2dd614895031121f
     position: fixed;
     height: 100%;
     width: 100%;
@@ -11,7 +15,11 @@
 
 @font-face {
     font-family: 'Paladins';
+<<<<<<< HEAD
+    src: local('Paladins'), url(../../../src/fonts/paladins.otf) format('opentype');
+=======
     src: local('Paladins'), url(../../fonts/paladins.otf) format('opentype');
+>>>>>>> 6bd365bf6e294b9d6e5a0aad2dd614895031121f
 }
 
 .body-font {
