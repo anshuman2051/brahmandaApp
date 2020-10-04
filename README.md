@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/anshuman2051/brahmandaApp">
-    <img src="readme_images/logo1.png" alt="Logo" width="500" height="500">
+    <img src="readme_images/logo1.png" alt="Logo" width="500" height="400">
   </a>
 
   <h3 align="center">Brahmanda</h3>
