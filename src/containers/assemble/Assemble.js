@@ -171,7 +171,10 @@ class Assemble extends React.Component{
                                    
                 <center 
                     className={classes.launchBtn + (this.state.rocketContents?.length ? "" :  (" ab "+ classes.disabled))}
-                    onClick = { (this.state.rocketContents?.length ?  ()=>this.props.history.push("/launch"): null) }
+                    onClick = { (this.state.rocketContents?.length ?  ()=>this.props.history.push({
+                        pathname: "/launch",                        
+                        state: this.state.rocketContents                        
+                    }): null) }
                 >
                     Launch !
                 </center>                                
