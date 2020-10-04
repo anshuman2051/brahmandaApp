@@ -1,0 +1,74 @@
+.container{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    background-image : url('../../res/rocket.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+.sideNav{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    min-width: 100px;
+    height: 100vh;
+    background-color: #000000d9;
+    border-radius: 0 16px 16px 0;
+}
+
+.desc{
+    display: flex;
+    width: 100px;
+    flex-wrap: wrap;
+    align-items: center;    
+    
+}
+
+
+.parts{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    height: 80vh;
+}
+.partName{
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 0.5rem 0.8rem;
+    margin : 0.5rem 0;
+    cursor: pointer;
+}
+
+.partName:hover{
+    background-color: black;
+}
+
+.descriptionBox{    
+    border-radius: 16px;
+    padding: 0.5rem 0.8rem;
+    margin-left: 24px;
+    background-color: #000000d9;
+}
+
+.partDesc{
+    display: flex;
+    flex-flow: row;    
+    align-items: center;
+    border-bottom: 1px solid white;
+    margin-bottom: 16px;
+}
+
+.partDesc>div{
+    min-width: 200px;
+}
+
+.partDesc img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-left: 16px;
+}

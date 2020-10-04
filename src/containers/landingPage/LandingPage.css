@@ -1,0 +1,85 @@
+.Login-component {
+    /* The image used */
+    background-image: url(../../../src/res/landing_background.jpg);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: 'Paladins';
+    src: local('Paladins'), url(../../../src/fonts/paladins.otf) format('opentype');
+}
+
+.body-font {
+    padding-top: 10%;
+    font-family: Paladins;
+    color: white;
+    font-size: 550%;
+    position: absolute;
+    float: top;
+    left: 0%;
+    top: 0%;
+}
+
+.item-font {
+    padding-top: 10%;
+    font-family: Paladins;
+    color: white;
+}
+
+.bm-item {
+    text-decoration: none;
+    margin-bottom: 0px;
+    align-items: center;
+    color: #d1d1d1;
+    outline-style: none;
+    box-shadow: none;
+    border-color: transparent;
+    transition: color 0.2s;
+}
+
+.bm-item:hover {
+    color: white;
+    outline-style: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.bm-burger-button {
+    position: absolute;
+    float: right;
+    width: 36px;
+    height: 30px;
+    top: 50%;
+    right: 5%;
+}
+
+.bm-burger-bars {
+    background: #ffffff;
+}
+
+.bm-menu {
+    background: #150040;
+    padding-top: 30%;
+    padding-right: 10%;
+    font-size: 200%;
+    opacity: 100%;
+    border: none;
+}
+
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+.bm-item-list {
+    color: #b8b7ad;
+    border: none;
+}
+
+.bm-overlay {
+    background: rgba(255, 255, 255, 255);
+}
