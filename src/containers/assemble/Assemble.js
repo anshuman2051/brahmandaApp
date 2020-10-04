@@ -8,93 +8,115 @@ class Assemble extends React.Component {
     state = {
         data: [
             {
-                name: "Nose",
-                parts: [
+                name : "Aerodynamic Nose Cone",
+                desc : "The nose cones are generally shaped to provide minimum aerodynamic drag in order to enhance the performance of the high-speed aerodynamic vehicles.",
+                parts : [
                     {
-                        name: "nose 1",
-                        desc: "adfssdfsdfsfsd",
-                        image: require('../../res/fuel1.png'),
-                        specs: [
-                            ["spec1", "value"],
-                            ["key2", "value2"]
+                        name : "Rounded Nose",
+                        desc : "If the speed of a rocket is less than the speed of sound, rounded nose is used",
+                        image : require("../../res/round_nose.png"),
+                        specs : [
+                            [": None"],
                         ]
+
                     },
                     {
-                        name: "nose 2",
-                        desc: "adfssdfsdfsfsd",
-                        image: require('../../res/fuel1.png'),
-                        specs: [
-                            ["spec1", "value"],
-                            ["key2", "value2"]
+                        name : "Sharp Point Nose",
+                        desc : "It is the best choice at supersonic speed of Rocket",
+                        image : require("../../res/pointed_nose.png"),
+                        specs : [
+                            [": None"],
                         ]
                     }
                 ]
             },
             {
-                name: "Fuel Tank",
-                parts: [
+                name : "Payload Fairings",
+                desc : "A payload fairing is a nose cone used to protect a spacecraft payload against the impact of dynamic pressure and aerodynamic heating during launch through an atmosphere.",
+                parts : [
                     {
-                        name: "Fuel Tank 1",
-                        desc: "The Oscar-B Fuel Tank provides fuel to attached liquid fuel engines.",
-                        image: require("../../res/fuel1.png"),
-                        specs: [
-                            ["mass", "0.23t"],
-                            ["drag", "0.15-0.2"]
+                        name : "AE-FF-1",                        
+                        image : require("../../res/AE-FF1_Airstream_Protective_Shell_(1.25m).png"),
+                        specs : [
+                            ["PAYLOAD TO LEO" , "22,800 kg"]
                         ]
                     },
                     {
-                        name: "Fuel Tank 2",
-                        desc: "The Oscar-B Fuel Tank provides fuel to attached liquid fuel engines.",
-                        image: require("../../res/fuel2.png"),
-                        specs: [
-                            ["mass", "0.23t"],
-                            ["drag", "0.15-0.2"]
-                        ]
-                    },
-                    {
-                        name: "Fuel Tank 3",
-                        desc: "The Oscar-B Fuel Tank provides fuel to attached liquid fuel engines.",
-                        image: require("../../res/fuel3.png"),
-                        specs: [
-                            ["mass", "0.23t"],
-                            ["drag", "0.15-0.2"]
+                        name : "AE-FF-2",
+                        image : require("../../res/AE-FF2_Airstream_Protective_Shell_(2.5m).png"),
+                        specs : [
+                            ["PAYLOAD TO LEO" , "140,000 kg"],
                         ]
                     }
                 ]
             },
             {
-                name: "Engine Type",
-                parts: [
+                name : "Fuel + Oxidiser",
+                parts : [
                     {
-                        name: "Engine 1",
-                        desc: "adfssdfsdfsfsd",
-                        image: require("../../res/engine1.png"),
-                        specs: [
-                            ["spec1", "value"],
-                            ["key2", "value2"]
+                        name : "Liq. H2 + Liq. O2",
+                        desc : "Highly Efficient but difficult to handle",
+                        image : require("../../res/transparent.png"),
+                        specs : [
+                            ["Density" , "70 kg/m^3"]
                         ]
                     },
                     {
-                        name: "Engine 2",
-                        desc: "adfssdfsdfsfsd",
-                        image: require("../../res/engine2.png"),
-                        specs: [
-                            ["spec1", "value"],
-                            ["key2", "value2"]
+                        name : "RP-1 + Liq.O2",
+                        desc : "Less Efficient than liq. H2 but easy to handle.",
+                        image : require("../../res/transparent.png"),
+                        specs : [
+                            ["Density" , "1000 kg/m^3"]
                         ]
                     }
                 ]
             },
             {
-                name: "Nozzle",
-                parts: [
+                name : "Fuel Tank",
+                parts : [
                     {
-                        name: "nose 1",
-                        desc: "adfssdfsdfsfsd",
-                        image: "https://wiki.kerbalspaceprogram.com/images/c/c1/Oscar-B_FT.png",
-                        specs: [
-                            ["spec1", "value"],
-                            ["key2", "value2"]
+                        name : "First Stage ",
+                        desc : "Capacity = 770,000 liters (fuel) + 1.2 million liters (oxidiser)",
+                        image : require("../../res/fuel_first.png"),
+                        specs : [
+                            ["Capacity (Fuel)" , "770,000 L"],
+                            ["Capacity (Oxidiser)" , "1.2 million L"],
+                        ]
+                    },
+                    {
+                        name : "Second Stage",
+                        image : require("../../res/fuel_sec_small.png"),
+                        specs : [
+                            ["Capacity (Fuel)" , "770,000 L"],
+                            ["Capacity (Oxidiser)" , "1.2 million L"]
+                        ]
+                    },
+                    {
+                        name : "Second Stage",
+                        image : require("../../res/fuel_sec_big.png"),
+                        specs : [
+                            ["Capacity (Fuel)" , "990,000 L"],
+                            ["Capacity (Oxidiser)" , "2 million L"]
+                        ]
+                    }
+                ]
+            },
+            {
+                name : "Engine",
+                desc : "A rocket engine uses stored rocket propellants as the reaction mass for forming a high-speed propulsive jet of fluid, usually high-temperature gas.Basically, it produces the required thrust for the Rocket",
+                parts : [
+                    {
+                        name : "Merlin",
+                        image : require("../../res/engine1.png"),
+                        specs : [
+                            ["Thrust Force" , "845 kN"],
+                        ]
+                    },
+                    {
+                        name : "The F-1 Engine",
+                        image : require("../../res/engine2.png"),
+                        specs : [
+                            ["Thrust Force" , "34000 kN"],
                         ]
                     }
                 ]
