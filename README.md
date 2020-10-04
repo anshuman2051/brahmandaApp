@@ -54,7 +54,7 @@ The Application is designed in such a way that it would allow users to customize
 * [React](https://reactjs.org/)
 * [Adobe XD](https://www.adobe.com/in/products/xd.html)
 * [Abobe Illustrator](https://www.adobe.com/in/products/illustrator.html)
-* [Adobe XD](https://www.adobe.com/in/products/photoshop.html)
+* [Adobe Photoshop](https://www.adobe.com/in/products/photoshop.html)
 
 ## Getting Started
 
