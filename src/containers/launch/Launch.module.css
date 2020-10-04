@@ -22,3 +22,23 @@
     fill: none;
     stroke-width: 1px;
 }
+
+.disabled{
+    cursor : not-allowed!important;
+    background-color: gray!important;
+}
+
+.launchBtn{
+    background-color: #3d05ad;
+    padding: 0.5rem 0.8rem;
+    margin : 0.5rem 1rem;
+    text-align: center;
+    left: 50%;
+    position: fixed;
+    bottom: 32px;
+    width: 80px;
+    border-radius: 8px;
+    color : white;
+    font-weight: bold;
+    cursor: pointer;
+}

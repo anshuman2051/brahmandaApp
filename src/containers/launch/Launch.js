@@ -1,7 +1,14 @@
 import React from 'react';
 import classes from './Launch.module.css'
+import { TimelineLite, CSSPlugin } from "gsap/all";
 
 class Launch extends React.Component{
+    constructor(props){
+        super(props);
+        this.rocketRef = React.createRef();
+        this.rocketTween = null;
+    }
+
     state = {
         data : null,   
         planets : [
@@ -83,9 +90,13 @@ class Launch extends React.Component{
         ],        
         destination : null
     }
+    
 
     componentDidMount = ()=>{
-        this.setState({ data : this.props?.location?.state})
+        this.setState({ data : this.props?.location?.state});
+        this.rocketTween = new TimelineLite({ paused:true }).to(this.rocketRef?.current, 2 , {x : "100"});
+        // this.rocketTween
+        //     .to(this.rocketRef, 2 , {display : "none"});
     }
 
     render(){
@@ -132,6 +143,7 @@ class Launch extends React.Component{
                     <ellipse cx="100" cy="225" rx="1100" ry="220" className={classes.orbit}/>
 
 
+
                     {/* path of rocket */}
                     {
                         destination ?
@@ -155,8 +167,21 @@ class Launch extends React.Component{
                                     />
                         })
                     }
+                    {
+                        // rocket
+                        destination || true?
+                            <image x="380" y = "210" width="20px" height="60px" href={require('../../res/rocket.png')} ref={this.rocketRef} />
+                        :
+                            null
+                    }
 
                 </svg>
+                <center 
+                    className={classes.launchBtn + ( destination ? "" :  (" "+ classes.disabled))}
+                    onClick={()=>this.rocketTween?.play()}
+                >
+                    GO !
+                </center>
             </div>
         );
     }
